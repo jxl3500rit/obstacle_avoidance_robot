@@ -57,7 +57,7 @@ def forward(speed = 60):
     GPIO.output(IN2, GPIO.LOW)
     GPIO.output(IN3, GPIO.HIGH)
     GPIO.output(IN4, GPIO.LOW)
-    set_speed(speed speed)
+    set_speed(speed, speed)
 
 def backward(speed = 50):
     GPIO.output(IN1, GPIO.LOW)
@@ -118,7 +118,7 @@ try:
             time.sleep(0.5)
             turn_left(50)
             time.sleep(0.6)
-            
+
 except KeyboardInterrupt:
     print("The program is terminated")
     stop()
